@@ -9,3 +9,14 @@ Z:\Documents\Visual Studio 2022\CardGame2022\CardGame2022\obj\Debug\CardGame2022
 Z:\Documents\Visual Studio 2022\CardGame2022\CardGame2022\obj\Debug\CardGame2022.csproj.CoreCompileInputs.cache
 Z:\Documents\Visual Studio 2022\CardGame2022\CardGame2022\obj\Debug\CardGame2022.exe
 Z:\Documents\Visual Studio 2022\CardGame2022\CardGame2022\obj\Debug\CardGame2022.pdb
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\bin\Debug\CardGame2022.exe.config
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\bin\Debug\CardGame2022.exe
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\bin\Debug\CardGame2022.pdb
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\obj\Debug\CardGame2022.csproj.AssemblyReference.cache
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\obj\Debug\CardGame2022.csproj.SuggestedBindingRedirects.cache
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\obj\Debug\CardGame2022.MainWindow.resources
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\obj\Debug\CardGame2022.Properties.Resources.resources
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\obj\Debug\CardGame2022.csproj.GenerateResource.cache
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\obj\Debug\CardGame2022.csproj.CoreCompileInputs.cache
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\obj\Debug\CardGame2022.exe
+\\iut.bx1\Etudiants\Home\emourany\Documents\CardGame2022\CardGame2022\obj\Debug\CardGame2022.pdb

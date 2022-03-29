@@ -19,7 +19,7 @@ namespace CardGame2022
             Application.SetCompatibleTextRenderingDefault(false);
             #endregion
             //MessageBox.Show("Hello.");
-            GameController gameController = new GameController(1);  // New GameController, GameLogic
+            GameController gameController = new GameController(2);  // New GameController, GameLogic
             Application.Run(new MainWindow(gameController)); // New MainWindow
         }
     }

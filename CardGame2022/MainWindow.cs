@@ -24,14 +24,14 @@ namespace CardGame2022
             InitializeComponent();
             this.gameController = gameController;
             gameController.StartMeUp(this);
-            /*playerOneHandLabel.Visible =
+            playerOneHandLabel.Visible =
                 playerOneScoreLabel.Visible =
                 playerTwoHandLabel.Visible =
                 playerTwoScoreLabel.Visible =
                 rowOneLabel.Visible =
                 rowTwoLabel.Visible =
                 rowThreeLabel.Visible =
-                rowFourLabel.Visible = true;*/
+                rowFourLabel.Visible = true;
         }
         #endregion
         #region Methods called by the controller
