@@ -184,9 +184,9 @@ namespace CardGame2022
         }
         private void DisplayNewGame(int numberOfPlayers) => mainWindow.WriteLine("Starting a new game with " + numberOfPlayers + " players.");
         private void DisplayCardSelectPromptForPlayer(int i) => mainWindow.WriteLine("Player " + i + ", what card do you choose?");
-        internal void callMethodOnGameLogic()
+        internal void NewGame()
         {
-            NewGame();
+            gameLogic.NewGame();
         }
 
         #endregion
