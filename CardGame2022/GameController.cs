@@ -60,7 +60,7 @@ namespace CardGame2022
         /// Method called when a rubber has ended to display the scores.
         /// </summary>
         /// <param name="playersScores">The list of all scores.</param>
-        internal void DisplayRubberScores(List<int> playersScores)
+        internal void DisplayRubberScores(List<List<int>> playersScores)
         {
             MessageBoxButtons buttons = MessageBoxButtons.OK;
             string message = "Final scores for this rubber:\n";
@@ -68,8 +68,16 @@ namespace CardGame2022
             mainWindow.WriteLine("Final scores for this rubber:");
             for (int i=0; i<playersScores.Count; i++)
             {
+                message += "Player " + i + ": ";
+                int sum = 0;
+                for (int j = 0; j < playersScores[i].Count; j++)
+                {
+                    sum += playersScores[i][j];
+                    message += playersScores[i][j] + " + ";
+                }
+                message += "= " + sum + "\n";
                 mainWindow.WriteLine("Player " + i + ": " + playersScores[i]);
-                message += "Player " + i + ": " + playersScores[i] + " \n"; 
+                
             }
             MessageBox.Show(message, "", buttons);
         }

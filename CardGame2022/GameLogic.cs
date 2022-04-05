@@ -16,7 +16,7 @@ namespace CardGame2022
         private readonly GameController gameController;
         #endregion
         #region Private attributes
-        private List<int> playersScores;
+        private List<List<int>> playersScores;
         private int numberOfPlayers;
         #endregion
         #region Constructor
@@ -30,10 +30,11 @@ namespace CardGame2022
             this.gameController = gameController;
             this.numberOfPlayers = numberOfPlayers;
             UpdateRubber(this.numberOfPlayers);
-            playersScores = new List<int>();
+            playersScores = new List<List<int>>();
             for (int i=0; i<this.numberOfPlayers;i++)
             {
-                playersScores.Add(0);
+                playersScores.Add(new List<int>());
+                playersScores[i].Add(0);
             }
         }
         #endregion
