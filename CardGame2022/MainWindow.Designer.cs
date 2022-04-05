@@ -38,6 +38,7 @@
             this.playerTwoHandLabel = new System.Windows.Forms.Label();
             this.playerOneScoreLabel = new System.Windows.Forms.Label();
             this.playerTwoScoreLabel = new System.Windows.Forms.Label();
+            this.newGameButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // messageListBox
@@ -155,11 +156,22 @@
             this.playerTwoScoreLabel.Text = "     ";
             this.playerTwoScoreLabel.Visible = false;
             // 
+            // newGameButton
+            // 
+            this.newGameButton.Location = new System.Drawing.Point(444, 12);
+            this.newGameButton.Name = "newGameButton";
+            this.newGameButton.Size = new System.Drawing.Size(75, 23);
+            this.newGameButton.TabIndex = 10;
+            this.newGameButton.Text = "New Game";
+            this.newGameButton.UseVisualStyleBackColor = true;
+            this.newGameButton.Click += new System.EventHandler(this.newGameButton_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 517);
+            this.Controls.Add(this.newGameButton);
             this.Controls.Add(this.playerTwoScoreLabel);
             this.Controls.Add(this.playerOneScoreLabel);
             this.Controls.Add(this.playerTwoHandLabel);
@@ -191,6 +203,7 @@
         private System.Windows.Forms.Label playerTwoHandLabel;
         private System.Windows.Forms.Label playerOneScoreLabel;
         private System.Windows.Forms.Label playerTwoScoreLabel;
+        private System.Windows.Forms.Button newGameButton;
     }
 }
 

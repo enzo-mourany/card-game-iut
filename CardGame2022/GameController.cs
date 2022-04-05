@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CardGame2022
 {
@@ -61,11 +62,16 @@ namespace CardGame2022
         /// <param name="playersScores">The list of all scores.</param>
         internal void DisplayRubberScores(List<int> playersScores)
         {
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            string message = "Final scores for this rubber:\n";
+
             mainWindow.WriteLine("Final scores for this rubber:");
             for (int i=0; i<playersScores.Count; i++)
             {
                 mainWindow.WriteLine("Player " + i + ": " + playersScores[i]);
+                message += "Player " + i + ": " + playersScores[i] + " \n"; 
             }
+            MessageBox.Show(message, "", buttons);
         }
         /// <summary>
         /// Method used by the window when a command is entered.
@@ -178,6 +184,12 @@ namespace CardGame2022
         }
         private void DisplayNewGame(int numberOfPlayers) => mainWindow.WriteLine("Starting a new game with " + numberOfPlayers + " players.");
         private void DisplayCardSelectPromptForPlayer(int i) => mainWindow.WriteLine("Player " + i + ", what card do you choose?");
+        internal void callMethodOnGameLogic()
+        {
+            NewGame();
+        }
+
         #endregion
+
     }
 }

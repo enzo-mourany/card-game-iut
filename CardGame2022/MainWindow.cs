@@ -130,5 +130,10 @@ namespace CardGame2022
             e.Graphics.DrawLine(Pens.Black, new Point(splitX, 0), new Point(splitX, Height));
         }
         #endregion
+
+        private void newGameButton_Click(object sender, EventArgs e)
+        {
+            // TODO: démarer une nouvelle manche
+        }
     }
 }

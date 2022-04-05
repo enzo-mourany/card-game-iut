@@ -109,6 +109,12 @@ namespace CardGame2022
             currentRubber = new GameRubber(numberOfPlayers, gameController);
         }
 
+        internal void NewGame()
+        {
+            UpdateRubber(numberOfPlayers);
+            ActOnce();
+        }
+
         #endregion
     }
 }
