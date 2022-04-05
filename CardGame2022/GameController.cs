@@ -66,7 +66,7 @@ namespace CardGame2022
             string message = "Final scores for this rubber:\n";
 
             mainWindow.WriteLine("Final scores for this rubber:");
-            for (int i=0; i<playersScores.Count; i++)
+            for (int i = 0; i < playersScores.Count; i++)
             {
                 message += "Player " + i + ": ";
                 int sum = 0;
@@ -74,9 +74,13 @@ namespace CardGame2022
                 {
                     sum += playersScores[i][j];
                     message += playersScores[i][j] + " + ";
+                    if (j < playersScores[i].Count - 2)
+                    {
+                        message += " + ";
+                    }
                 }
                 message += "= " + sum + "\n";
-                mainWindow.WriteLine("Player " + i + ": " + playersScores[i]);
+                mainWindow.WriteLine("Player " + i + ": " + playersScores[i][playersScores[i].Count - 1]);
                 
             }
             MessageBox.Show(message, "", buttons);

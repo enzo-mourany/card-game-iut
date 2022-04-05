@@ -101,7 +101,7 @@ namespace CardGame2022
             }
             for (int i=0; i<playersScores.Count; i++)
             {
-                playersScores[i] = newScores[i];
+                playersScores[i].Add(newScores[i]);
             }
             return true;
         }
