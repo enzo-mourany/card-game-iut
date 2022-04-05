@@ -18,7 +18,9 @@ namespace CardGame2022
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             #endregion
-            //MessageBox.Show("Hello.");
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            bool two = MessageBox.Show("Do you want to play a two-players game?",
+            "", buttons) == DialogResult.Yes;
             GameController gameController = new GameController(2);  // New GameController, GameLogic
             Application.Run(new MainWindow(gameController)); // New MainWindow
         }
