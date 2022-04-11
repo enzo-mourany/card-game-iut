@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardsHandling.cs" />
+    <Compile Include="CardView.cs" />
     <Compile Include="GameController.cs" />
     <Compile Include="GameLogic.cs" />
     <Compile Include="GameRubber.cs" />
