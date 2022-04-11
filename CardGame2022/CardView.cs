@@ -25,6 +25,11 @@ namespace CardGame2022
             this.malus = CardsHandling.MalusValue(this.card);
         }
 
+        /// <summary>
+        /// Method to draw a card
+        /// </summary>
+        /// <param name="card">The numeric value for the card</param>
+        /// <param name="g">The graphic where the card will be drawn</param>
         public void DrawCard(int card, Graphics g)
         {
             String text = card.ToString();
@@ -33,5 +38,16 @@ namespace CardGame2022
             g.DrawRectangle(p, rect);
             g.DrawString(text, fontCardText, brushCard, Position);
         }
+
+        /// <summary>
+        /// Method check if a point is in the view
+        /// </summary>
+        /// <param name="p">The point</param>
+        /// <returns>True if the view contains p</returns>
+        public bool Contains(Point p)
+        {
+            Rectangle r = new Rectangle(Position, cardSize);
+            return r.Contains(p);
+        } 
     }
 }
