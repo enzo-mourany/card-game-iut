@@ -133,7 +133,7 @@ namespace CardGame2022
 
         private void newGameButton_Click(object sender, EventArgs e)
         {
-            // TODO: démarer une nouvelle manche
+            gameController.NewGame();
         }
     }
 }
