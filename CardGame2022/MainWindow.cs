@@ -106,7 +106,7 @@ namespace CardGame2022
             {
                 case 0:
                     rowOneLabel.Text = CardsHandling.ListOfCardsToString(cards);
-                    if (cardLists.Count > 0)
+                    if (cardLists[0].Count() > 0)
                     {
                         cardLists[0].Clear();
                     } 
@@ -121,7 +121,7 @@ namespace CardGame2022
                     break;
                 case 1:
                     rowTwoLabel.Text = CardsHandling.ListOfCardsToString(cards);
-                    if (cardLists.Count > 0)
+                    if (cardLists[1].Count() > 0)
                     {
                         cardLists[1].Clear();
                     }
@@ -136,7 +136,7 @@ namespace CardGame2022
                     break;
                 case 2:
                     rowThreeLabel.Text = CardsHandling.ListOfCardsToString(cards);
-                    if (cardLists.Count > 0)
+                    if (cardLists[2].Count() > 0)
                     {
                         cardLists[2].Clear();
                     }
@@ -151,7 +151,7 @@ namespace CardGame2022
                     break;
                 case 3:
                     rowFourLabel.Text = CardsHandling.ListOfCardsToString(cards);
-                    if (cardLists.Count > 0)
+                    if (cardLists[3].Count() > 0)
                     {
                         cardLists[3].Clear();
                     }
