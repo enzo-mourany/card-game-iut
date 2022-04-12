@@ -15,9 +15,9 @@ namespace CardGame2022
     /// </summary>
     internal partial class MainWindow : Form
     {
+        #region Association attributes
         List<CardView> cardViews;
         List<List<CardView>> cardLists;
-        #region Association attributes
         private readonly GameController gameController;
         #endregion
         #region Constructor
@@ -102,15 +102,39 @@ namespace CardGame2022
             {
                 case 0:
                     rowOneLabel.Text = CardsHandling.ListOfCardsToString(cards);
+                    cardLists[0].Clear();
+                    for (int i = 0; i < cards.Count(); i++)
+                    {
+                        cardLists[0].Add(new CardView(new Point(0, 0), i));
+                    }
+                    Refresh();
                     break;
                 case 1:
                     rowTwoLabel.Text = CardsHandling.ListOfCardsToString(cards);
+                    cardLists[0].Clear();
+                    for (int i = 0; i < cards.Count(); i++)
+                    {
+                        cardLists[1].Add(new CardView(new Point(0, 0), i));
+                    }
+                    Refresh();
                     break;
                 case 2:
                     rowThreeLabel.Text = CardsHandling.ListOfCardsToString(cards);
+                    cardLists[0].Clear();
+                    for (int i = 0; i < cards.Count(); i++)
+                    {
+                        cardLists[2].Add(new CardView(new Point(0, 0), i));
+                    }
+                    Refresh();
                     break;
                 case 3:
                     rowFourLabel.Text = CardsHandling.ListOfCardsToString(cards);
+                    cardLists[0].Clear();
+                    for (int i = 0; i < cards.Count(); i++)
+                    {
+                        cardLists[3].Add(new CardView(new Point(0, 0), i));
+                    }
+                    Refresh();
                     break;
                 default:
                     return;
