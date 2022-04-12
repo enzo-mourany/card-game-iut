@@ -36,6 +36,10 @@ namespace CardGame2022
                 rowFourLabel.Visible = true;
             cardViews = new List<CardView>();
             cardLists = new List<List<CardView>>();
+            for (int i = 0; i < 4; i++)
+            {
+                cardLists.Add(new List<CardView>());
+            }
         }
         #endregion
         #region Methods called by the controller
@@ -102,39 +106,63 @@ namespace CardGame2022
             {
                 case 0:
                     rowOneLabel.Text = CardsHandling.ListOfCardsToString(cards);
-                    cardLists[0].Clear();
-                    for (int i = 0; i < cards.Count(); i++)
+                    if (cardLists.Count > 0)
                     {
-                        cardLists[0].Add(new CardView(new Point(0, 0), i));
+                        cardLists[0].Clear();
+                    } 
+                    else
+                    {
+                        for (int i = 0; i < cards.Count(); i++)
+                        {
+                            cardLists[0].Add(new CardView(new Point(0, 0), i));
+                        }
+                        Refresh();
                     }
-                    Refresh();
                     break;
                 case 1:
                     rowTwoLabel.Text = CardsHandling.ListOfCardsToString(cards);
-                    cardLists[0].Clear();
-                    for (int i = 0; i < cards.Count(); i++)
+                    if (cardLists.Count > 0)
                     {
-                        cardLists[1].Add(new CardView(new Point(0, 0), i));
+                        cardLists[1].Clear();
                     }
-                    Refresh();
+                    else
+                    {
+                        for (int i = 0; i < cards.Count(); i++)
+                        {
+                            cardLists[1].Add(new CardView(new Point(0, 0), i));
+                        }
+                        Refresh();
+                    }
                     break;
                 case 2:
                     rowThreeLabel.Text = CardsHandling.ListOfCardsToString(cards);
-                    cardLists[0].Clear();
-                    for (int i = 0; i < cards.Count(); i++)
+                    if (cardLists.Count > 0)
                     {
-                        cardLists[2].Add(new CardView(new Point(0, 0), i));
+                        cardLists[2].Clear();
                     }
-                    Refresh();
+                    else
+                    {
+                        for (int i = 0; i < cards.Count(); i++)
+                        {
+                            cardLists[2].Add(new CardView(new Point(0, 0), i));
+                        }
+                        Refresh();
+                    }
                     break;
                 case 3:
                     rowFourLabel.Text = CardsHandling.ListOfCardsToString(cards);
-                    cardLists[0].Clear();
-                    for (int i = 0; i < cards.Count(); i++)
+                    if (cardLists.Count > 0)
                     {
-                        cardLists[3].Add(new CardView(new Point(0, 0), i));
+                        cardLists[3].Clear();
                     }
-                    Refresh();
+                    else
+                    {
+                        for (int i = 0; i < cards.Count(); i++)
+                        {
+                            cardLists[3].Add(new CardView(new Point(0, 0), i));
+                        }
+                        Refresh();
+                    }
                     break;
                 default:
                     return;
