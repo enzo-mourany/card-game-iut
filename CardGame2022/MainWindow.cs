@@ -15,6 +15,8 @@ namespace CardGame2022
     /// </summary>
     internal partial class MainWindow : Form
     {
+        List<CardView> cardViews;
+        List<List<CardView>> cardLists;
         #region Association attributes
         private readonly GameController gameController;
         #endregion
@@ -32,6 +34,8 @@ namespace CardGame2022
                 rowTwoLabel.Visible =
                 rowThreeLabel.Visible =
                 rowFourLabel.Visible = true;
+            cardViews = new List<CardView>();
+            cardLists = new List<List<CardView>>();
         }
         #endregion
         #region Methods called by the controller
@@ -112,6 +116,7 @@ namespace CardGame2022
                     return;
             }
         }
+
 
         #endregion
         #region Event handling
